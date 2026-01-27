@@ -1,0 +1,78 @@
+.aboutpage-root {
+  background: #ffffff;
+  color: #000000;
+  padding: 4.5rem 0; /* py-28 */
+  min-height: 60vh;
+}
+
+.top-links {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  z-index: 20;
+}
+
+.back-link {
+  color: #111827; /* gray-900 */
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: #b29774;
+}
+
+.aboutpage-inner {
+  max-width: 64rem; /* ~1024px */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.aboutpage-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+}
+
+.aboutpage-intro {
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: #e6e7ea;
+  margin: 2rem 0;
+}
+
+.about-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: transparent;
+}
+
+.about-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.about-card p {
+  margin: 0;
+  color: #374151;
+}
+
+@media (min-width: 768px) {
+  .about-sections {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

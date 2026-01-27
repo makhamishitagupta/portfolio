@@ -1,0 +1,66 @@
+.recent-label {
+  color: #6b7280; /* gray-500 */
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-top: 1px solid #e6e7ea; /* thin divider */
+}
+
+.project-row:first-child {
+  border-top: none;
+}
+
+.project-name {
+  font-weight: 400;
+  /* font-size: clamp(1.375rem, 4.5vw, 2rem); scales from mobile to desktop */
+  line-height: 2;
+  font-size: 2.5rem;
+}
+
+.project-category {
+  color: #374151; /* gray-700 */
+  font-size: 0.95rem;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.more-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #d1d5db; /* gray-300 */
+  padding: 0.625rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.15s ease, transform 0.12s ease;
+}
+
+.more-btn:hover {
+  background: #f9fafb;
+  transform: translateY(-2px);
+}
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  .project-row {
+    padding: 1.25rem 0;
+  }
+  .project-category {
+    font-size: 1rem;
+  }
+}
