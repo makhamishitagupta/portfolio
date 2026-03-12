@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { siteData } from '../data/data'
 
 function Sidebar({ isOpen, onClose }) {
@@ -32,21 +33,20 @@ function Sidebar({ isOpen, onClose }) {
 					>
 						<nav className="flex flex-col items-center gap-6">
 							{navItems.map((item) => (
-								<a
+								<Link
 									key={item.href}
-									href={item.href}
+									to={item.href}
 									onClick={onClose}
 									className="text-white text-3xl md:text-5xl tracking-wide hover:text-[#B29774] transition-colors"
 								>
 									{item.label}
-								</a>
+								</Link>
 							))}
 						</nav>
 
-						{/* Socials */}
 						<div className="absolute bottom-10 flex gap-6 text-sm text-neutral-300">
-							<a href={siteData.socials.github} target="_blank" className="hover:text-[#B29774]">GitHub</a>
-							<a href={siteData.socials.linkedin} target="_blank" className="hover:text-[#B29774]">LinkedIn</a>
+							<a href={siteData.socials.github} target="_blank" rel="noreferrer" className="hover:text-[#B29774]">GitHub</a>
+							<a href={siteData.socials.linkedin} target="_blank" rel="noreferrer" className="hover:text-[#B29774]">LinkedIn</a>
 						</div>
 					</motion.div>
 				</motion.aside>

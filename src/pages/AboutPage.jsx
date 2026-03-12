@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { siteData } from '../data/data'
-import { pic1 } from '../assets/pic1.jpg'
-import { pic3 } from '../assets/pic2.jpg'
+import pic1 from '../assets/pic1.jpg'
+import pic3 from '../assets/pic2.jpg'
 import Contact from '../components/Contact'
 import './AboutPage.css'
 
@@ -74,8 +74,8 @@ export default function AboutPage() {
 					</div>
 
 					<div className="md:col-span-7 lg:col-span-8">
-						<div className="w-100% h-200 bg-gray-100 rounded-lg shadow-md justify-center flex items-center overflow-hidden">
-							<img src={pic1} alt="About Image" className="w-85% h-180 rounded-lg shadow-md" />
+							<div className="w-full h-[200px] bg-gray-100 rounded-lg shadow-md justify-center flex items-center overflow-hidden">
+								<img src={pic1} alt="About Image" className="w-full h-full object-cover rounded-lg shadow-md" />
 						</div>
 					</div>
 				</div>
@@ -112,12 +112,9 @@ export default function AboutPage() {
 			<section className="bg-white text-black py-16 scroll-px-24">
 				<div className="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 					<motion.div className="w-full" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-						<div className="w-full h-70 bg-gray-100 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-200">
-							<img src={pic3} alt="About Image" className="w-full h-75 rounded-lg shadow-md" />
-						</div>
-					</motion.div>
-
-					<motion.div className="space-y-4" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+							<div className="w-full h-[280px] bg-gray-100 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-200 overflow-hidden">
+								<img src={pic3} alt="About Image" className="w-full h-full object-cover rounded-lg shadow-md" />
+							</div>
 						<div className="inline-flex items-center gap-3">
 							<div className="w-10 h-10 rounded-full bg-black text-white grid place-items-center font-bold">W.</div>
 							<h3 className="text-2xl font-semibold">Achievements</h3>
