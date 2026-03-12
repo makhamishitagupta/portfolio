@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { siteData } from '../data/data'
+import { pic4 } from '../assets/pic4.jpg'
 
 
 function ContactPage() {
@@ -87,7 +88,7 @@ function ContactPage() {
 						</motion.h1>
 					</div>
 					<div className="md:col-span-4 flex md:justify items-start gap-10">
-						<img src="../public/assets/pic4.jpg" alt="Profile" className="h-20 w-20 rounded-full object-cover" />
+						<img src={pic4} alt="Profile" className="h-20 w-20 rounded-full object-cover" />
 					</div>
 				</div>
 
