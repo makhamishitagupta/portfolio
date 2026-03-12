@@ -73,7 +73,7 @@ export default function AboutPage() {
 
 					<div className="md:col-span-7 lg:col-span-8">
 						<div className="w-100% h-200 bg-gray-100 rounded-lg shadow-md justify-center flex items-center overflow-hidden">
-							<img src='../src/assets/pic1.jpg' alt="About Image" className="w-85% h-180 rounded-lg shadow-md" />
+							<img src='../public/assets/pic1.jpg' alt="About Image" className="w-85% h-180 rounded-lg shadow-md" />
 						</div>
 					</div>
 				</div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
 				<div className="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 					<motion.div className="w-full" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
 						<div className="w-full h-70 bg-gray-100 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-200">
-							<img src='../src/assets/pic3.jpg' alt="About Image" className="w-full h-75 rounded-lg shadow-md" />
+							<img src='../public/assets/pic3.jpg' alt="About Image" className="w-full h-75 rounded-lg shadow-md" />
 						</div>
 					</motion.div>
 

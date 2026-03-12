@@ -87,7 +87,7 @@ function ContactPage() {
 						</motion.h1>
 					</div>
 					<div className="md:col-span-4 flex md:justify items-start gap-10">
-						<img src="../src/assets/pic4.jpg" alt="Profile" className="h-20 w-20 rounded-full object-cover" />
+						<img src="../public/assets/pic4.jpg" alt="Profile" className="h-20 w-20 rounded-full object-cover" />
 					</div>
 				</div>
 

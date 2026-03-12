@@ -16,12 +16,12 @@ export const siteData = {
 	projects: [
 		{
 			id: 1,
-			title: "AutoSkill – Smart Skill Estimator",
+			title: "Academic Resource Management Platform ",
 			description:
-				"Detects coding skills from uploaded files and provides insights. Includes dashboard, MongoDB integration, and skill visualization.",
+				"A web application for students to share and access academic resources. Built with MERN stack, featuring user authentication, resource categorization, and a responsive design.",
 			image: "/images/autoskill.png",
-			link: "https://github.com/makhamishitagupta/AutoSkill.git",
-			tech: ["Python", "React", "MongoDB"],
+			link: "https://github.com/makhamishitagupta/ExamVault.git",
+			tech: ["Node.js", "React", "MongoDB", "Cloudinary", "Express"],
 			category: "Web Development",
 		},
 		{
