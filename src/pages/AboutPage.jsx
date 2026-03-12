@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { siteData } from '../data/data'
 import pic1 from '../assets/pic1.jpg'
-import pic3 from '../assets/pic2.jpg'
+import pic3 from '../assets/pic3.jpg'
 import Contact from '../components/Contact'
 import './AboutPage.css'
 
@@ -74,8 +74,8 @@ export default function AboutPage() {
 					</div>
 
 					<div className="md:col-span-7 lg:col-span-8">
-							<div className="w-full h-[200px] bg-gray-100 rounded-lg shadow-md justify-center flex items-center overflow-hidden">
-								<img src={pic1} alt="About Image" className="w-full h-full object-cover rounded-lg shadow-md" />
+						<div className="w-130 h-[600px] bg-gray-100 rounded-lg shadow-md justify-center flex items-center overflow-hidden ml-10">
+							<img src={pic1} alt="About Image" className="w-full h-full object-cover rounded-lg shadow-md" />
 						</div>
 					</div>
 				</div>
@@ -111,20 +111,20 @@ export default function AboutPage() {
 
 			<section className="bg-white text-black py-16 scroll-px-24">
 				<div className="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-					<motion.div className="w-full" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-							<div className="w-full h-[280px] bg-gray-100 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-200 overflow-hidden">
+					<div className="w-full h-[280px] bg-gray-100 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-200 overflow-hidden">
 								<img src={pic3} alt="About Image" className="w-full h-full object-cover rounded-lg shadow-md" />
 							</div>
+					<motion.div className="w-full" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
 						<div className="inline-flex items-center gap-3">
 							<div className="w-10 h-10 rounded-full bg-black text-white grid place-items-center font-bold">W.</div>
 							<h3 className="text-2xl font-semibold">Achievements</h3>
 						</div>
-						<p className="text-gray-700">
+						<p className="text-gray-700 mt-4 leading-relaxed">
 							<u className="list-disc list-inside space-y-2 no-underline">
 								<li>Secured 96.51 percentile in JEE Mains 2024 </li>
 								<li>Ranked 3877 in TS EAPCET and 3299 in COMEDK</li>
-								<li>Internship at Bandiwala, a startup from VNRVJIET, in first year</li>
-								<li>Runner-Up at VJ Hackathon 2025 organized by CSI Student  	Chapter of VNRVJIET</li>
+								<li>Frontend Developer & Marketing Intern in BandiWala Food Tech Pvt Ltd from Mar 2025 – Dec 2025</li>
+								<li>Runner-Up at VJ Hackathon 2025 organized by CSI Student Chapter of VNRVJIET</li>
 								<li>3rd Prize in Spark Quiz Competition at Convergence 2025</li>
 							</u>
 						</p>
@@ -134,7 +134,7 @@ export default function AboutPage() {
 
 			<section className="bg-white text-black py-16 px-24">
 				{/* Title */}
-				<motion.h2 className="text-2xl md:text-3xl font-semibold mb-8" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+				<motion.h2 className="text-2xl md:text-3xl font-semibold mb-8 ml-120" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
 						Education
 				</motion.h2>
 
@@ -153,7 +153,7 @@ export default function AboutPage() {
 						<p className="italic">
 							VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad
 						</p>
-						<p>2024 – 2028 (Pursuing) | CGPA: <span className="font-semibold">9.7</span> (till 1st Year, I Sem)</p>
+						<p>2024 – 2028 (Pursuing) | CGPA: <span className="font-semibold">9.43</span> (till 2nd Year, I Sem)</p>
 
 						<hr className="border-gray-300 my-4" />
 
@@ -165,7 +165,7 @@ export default function AboutPage() {
 						</p>
 					</motion.div>
 				</div>
-				<hr className="border-gray-300 mt-20" />
+				<hr className="border-gray-300 mt-15" />
 			</section>
 
 			
