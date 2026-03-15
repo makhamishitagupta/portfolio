@@ -1,71 +1,78 @@
-.about-section {
+.aboutpage-root {
   background: #ffffff;
   color: #000000;
   padding: 4.5rem 0; /* py-28 */
+  min-height: 60vh;
 }
 
-.container {
-  max-width: 80rem; /* ~1280px */
-  margin: 0 auto;
-  padding: 0 1.5rem; /* px-6 */
+.top-links {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  z-index: 20;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.about-left .lead {
-  font-weight: 800;
-  font-size: clamp(1.5rem, 4.5vw, 2.5rem);
-  line-height: 1.03;
-  margin: 0;
-}
-
-.about-right .sub {
-  color: #374151; /* gray-700 */
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.about-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50rem;
-  height: 50rem;
-  background: #000000;
-  color: #ffffff;
-  border-radius: 50%;
+.back-link {
+  color: #111827; /* gray-900 */
   text-decoration: none;
-  font-weight: 700;
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
-.about-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+.back-link:hover {
+  color: #b29774;
+}
+
+.aboutpage-inner {
+  max-width: 64rem; /* ~1024px */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.aboutpage-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+}
+
+.aboutpage-intro {
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
 
 .divider {
   border: none;
   height: 1px;
-  background: #28292d;
+  background: #e6e7ea;
   margin: 2rem 0;
 }
 
+.about-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: transparent;
+}
+
+.about-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.about-card p {
+  margin: 0;
+  color: #374151;
+}
+
 @media (min-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-left .lead {
-    font-size: clamp(2rem, 4.5vw, 3rem);
-  }
-  .about-btn {
-    width: 112px;
-    height: 112px;
+  .about-sections {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

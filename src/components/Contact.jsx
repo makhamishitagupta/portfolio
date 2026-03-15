@@ -23,7 +23,7 @@ function Contact() {
 						rransition={{ duration: 0.4 }}
 						className="shrink-0"
 					>
-						<Link to="/contact" className="inline-flex h-28 w-28 md:h-36 md:w-36 items-center justify-center text-center rounded-full bg-[#3B5AFF] text-white font-medium leading-tight transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,90,255,.35)]">
+						<Link to="/contact" className="inline-flex h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 items-center justify-center text-center rounded-full bg-[#3B5AFF] text-white font-medium leading-tight transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,90,255,.35)]">
 							<span className="text-sm md:text-base">Get in touch</span>
 						</Link>
 					</motion.div>

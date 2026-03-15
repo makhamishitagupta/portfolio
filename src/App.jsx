@@ -4,11 +4,13 @@ import Sidebar from './components/Sidebar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
+import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import ProjectsPage from './pages/ProjectsPage'
+import SkillsPage from './pages/SkillsPage'
 import { Routes, Route, useLocation } from 'react-router-dom'
 
 function App() {
@@ -51,12 +53,14 @@ function App() {
 								<About />
 								{/* Projects moved to its own page */}
 								<Projects />
+								<Skills />
 								<Contact />
 							</>
 						}
 					/>
 					<Route path="/projects" element={<ProjectsPage />} />
 					<Route path="/about" element={<AboutPage />} />
+					<Route path="/skills" element={<SkillsPage />} />
 					<Route path="/contact" element={<ContactPage />} />
 				</Routes>
 				<Footer />

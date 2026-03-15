@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom'
 import { siteData } from '../data/data'
 
 function Sidebar({ isOpen, onClose }) {
-	const navItems = [{ href: '/', label: 'Home' }, ...siteData.sections.map((s) => ({ href: `/${s.toLowerCase()}`, label: s }))]
+	const navItems = [
+		{ href: '/', label: 'Home' },
+		{ href: '/about', label: 'About' },
+		{ href: '/skills', label: 'Skills' },
+		{ href: '/projects', label: 'Projects' },
+		{ href: '/contact', label: 'Contact' },
+	]
 
 	return (
 		<AnimatePresence>

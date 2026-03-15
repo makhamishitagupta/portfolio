@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { siteData } from '../data/data'
-import pic4 from '../assets/pic4.jpg'
+import pic1 from '../assets/pic1.jpg'
 
 
 function ContactPage() {
@@ -57,7 +57,7 @@ function ContactPage() {
 
 	return (
 		<motion.section 
-			className="min-h-screen bg-[#1A1A1A] text-white py-28 px-40"
+			className="min-h-screen bg-[#1A1A1A] text-white py-28 px-4 sm:px-6 md:px-10 lg:px-16"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.6 }}
@@ -88,7 +88,7 @@ function ContactPage() {
 						</motion.h1>
 					</div>
 					<div className="md:col-span-4 flex md:justify items-start gap-10">
-						<img src={pic4} alt="Profile" className="h-20 w-20 rounded-full object-cover" />
+						<img src={pic1} alt="Profile" className="h-20 w-20 rounded-full object-cover" />
 					</div>
 				</div>
 
@@ -176,7 +176,7 @@ function ContactPage() {
 								<button
 									type="submit"
 									disabled={!isValid}
-									className={`inline-flex h-30 w-30 md:h-30 md:w-30 items-center justify-center rounded-full ${isValid ? 'bg-[#3B5AFF] hover:scale-105 hover:shadow-[0_0_30px_rgba(59,90,255,.35)]' : 'bg-gray-600/60 cursor-not-allowed'} text-white transition-all duration-300 ease-in-out`}
+									className={`inline-flex h-10 w-24 md:h-12 md:w-32 items-center justify-center rounded-full ${isValid ? 'bg-[#3B5AFF] hover:scale-105 hover:shadow-[0_0_30px_rgba(59,90,255,.35)]' : 'bg-gray-600/60 cursor-not-allowed'} text-white transition-all duration-300 ease-in-out`}
 								>
 									<span className="text-xs md:text-sm">Send</span>
 								</button>

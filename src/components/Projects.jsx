@@ -14,9 +14,10 @@ function Projects() {
   };
 
   return (
+    // pb-30 - class
     <motion.section
       id="projects"
-      className="pb-30 bg-white text-black relative px-28"
+      className="bg-white text-black relative px-4 sm:px-6 md:px-10 lg:px-16"
       onMouseMove={handleMouseMove}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -41,7 +42,7 @@ function Projects() {
         </motion.p>
 
         <div className="project-list relative">
-          {siteData.projects.map((p, idx) => (
+          {siteData.projects.slice(0, 4).map((p, idx) => (
             <motion.div
               key={p.id ?? idx}
               className="project-row transition-all duration-300"
@@ -109,8 +110,6 @@ function Projects() {
             >
                 View
             </button>
-          
-
         </div>
       )}
     </motion.section>

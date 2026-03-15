@@ -20,7 +20,7 @@ export const siteData = {
 			description:
 				"A web application for students to share and access academic resources. Built with MERN stack, featuring user authentication, resource categorization, and a responsive design.",
 			image: "/images/autoskill.png",
-			link: "https://github.com/makhamishitagupta/ExamVault.git",
+			link: "https://frontend-examvault.vercel.app/",
 			tech: ["Node.js", "React", "MongoDB", "Cloudinary", "Express"],
 			category: "Web Development",
 		},
@@ -63,6 +63,16 @@ export const siteData = {
 			link: "https://github.com/makhamishitagupta/Income-Prediction-Basic-Data-Analysis",
 			tech: ["Python", "Pandas", "Scikit-learn"],
 			category: "Data Analysis",
+		},
+		{
+			id: 6,
+			title: "Blog Fuel",
+			description:
+				"A full-stack blogging platform that allows users to create, edit, and manage blogs with secure authentication and role-based access.",
+			image: "/images/triscope.png",
+			link: "https://github.com/makhamishitagupta/blogfuel",
+			tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Google OAuth", "Axios"],
+			category: "Web Development",
 		},
 	],
 }

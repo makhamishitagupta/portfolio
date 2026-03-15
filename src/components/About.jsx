@@ -66,7 +66,7 @@ export default function About() {
                         >
                             <Link 
                                 to="/about"
-                                className="inline-flex items-center justify-center w-24 h-24 md:w-35 md:h-35 bg-black text-white rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:bg-[#3B5AFF]"
+                                className="inline-flex items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-black text-white rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:bg-[#3B5AFF]"
                             >
                                 About me
                             </Link>

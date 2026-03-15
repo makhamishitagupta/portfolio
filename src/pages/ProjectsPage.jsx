@@ -15,7 +15,7 @@ function ProjectsPage() {
         <>
             <motion.section 
                 id="projects" 
-                className="bg-white text-black py-24 px-20"
+                className="bg-white text-black py-24 px-4 sm:px-6 md:px-10 lg:px-20"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -27,7 +27,7 @@ function ProjectsPage() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <motion.div 
-                        className="pb-8 border-b border-neutral-200 px-24"
+                        className="pb-8 border-b border-neutral-200 px-4 sm:px-6 lg:px-10"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}

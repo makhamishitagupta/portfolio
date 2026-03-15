@@ -61,7 +61,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* Content row: arrow + text on left, image on right (matches reference) */}
-			<section className="bg-white text-black py-16 px-24">
+			{/* <section className="bg-white text-black py-16 px-24">
 				<div className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
 					<div className="md:col-span-5 lg:col-span-4 flex items-start">
 						<div className="mr-6 text-2xl text-gray-400">→</div>
@@ -79,7 +79,7 @@ export default function AboutPage() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* Rest of page (skills/highlight/footer) kept from previous structure */}
 			<section className="bg-white text-black py-16 px-24">
