@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { siteData } from '../data/data'
-import pic1 from '../assets/pic1.jpg'
+import pic2 from '../assets/pic2.jpg'
 
 function ContactPage() {
 
@@ -89,7 +89,7 @@ function ContactPage() {
 
 					<div className="md:col-span-4 flex items-start">
 						<img
-							src={pic1}
+							src={pic2}
 							alt="Profile"
 							className="h-20 w-20 rounded-full object-cover"
 						/>
