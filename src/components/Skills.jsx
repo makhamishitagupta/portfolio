@@ -53,7 +53,7 @@ export default function SkillsIntro() {
       {/* Description */}
       <motion.p
         variants={item}
-        className="max-w-4xl text-sm leading-relaxed mb-10 text-gray-600 m-auto"
+        className="max-w-4xl text-sm leading-relaxed mb-10 text-gray-600 m-auto text-justify"
       >
         I build modern full-stack applications and explore data-driven
         solutions using tools from both software engineering and data
