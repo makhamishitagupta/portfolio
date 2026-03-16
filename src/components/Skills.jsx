@@ -1,45 +1,3 @@
-// import { motion } from 'framer-motion'
-// import { Link } from "react-router-dom";
-
-// export default function SkillsIntro() {
-// 	return (
-// 	  <motion.section className="w-full bg-white text-black py-16 px-8 md:px-20">
-  
-// 		{/* Title */}
-// 		<motion.p className="text-xs tracking-[0.25em] text-gray-400 uppercase">
-// 			Skills
-// 		</motion.p>
-
-// 		<motion.h2 className="mt-3 text-3xl md:text-4xl lg:text-[2.5rem] font-medium tracking-tight text-gray-800 mb-5">
-// 			Technologies I work with
-// 		</motion.h2>
-  
-// 		{/* Description */}
-// 		<motion.p className="max-w-4xl text-sm md:text-base leading-relaxed mb-8 m-auto">
-// 		  I build modern full-stack applications and explore data-driven
-// 		  solutions using tools from both software engineering and data
-// 		  science. My experience spans web development technologies like
-// 		  React, Node.js, Express, and MongoDB, while I am actively expanding
-// 		  my knowledge in data analysis and machine learning using Python,
-// 		  NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn.
-// 		</motion.p>
-  
-// 		{/* Read More */}
-// 		<motion.div className="flex items-center gap-4 text-sm tracking-wider cursor-pointer group ml-25">
-  
-// 		  <motion.span className="h-6 w-[2px] bg-gray-400"></motion.span>
-// 		  	<Link to="/skills" className=" transition-all duration-300 hover:scale-105 hover:text-[#3B5AFF]">
-// 		  		READ MORE
-//         	</Link>
-  
-// 		  <motion.span className="h-6 w-[2px] bg-gray-400"></motion.span>
-  
-// 		</motion.div>
-  
-// 	  </motion.section>
-// 	);
-//   }
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -73,13 +31,13 @@ export default function SkillsIntro() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="w-full bg-white text-black py-15 px-8 md:px-20"
+      className="w-full bg-white text-black py-15 px-8 md:px-35"
     >
 
       {/* Small Title */}
       <motion.p
         variants={item}
-        className="text-xs tracking-[0.25em] text-gray-400 uppercase"
+        className="text-xs tracking-[0.25em] text-gray-400 uppercase mb-10"
       >
         Skills
       </motion.p>
@@ -87,7 +45,7 @@ export default function SkillsIntro() {
       {/* Main Heading */}
       <motion.h2
         variants={item}
-        className="mt-3 text-3xl md:text-4xl lg:text-[2.5rem] font-medium tracking-tight text-gray-800 mb-6"
+        className="mt-3 text-3xl md:text-4xl lg:text-[3.5rem] font-medium tracking-tight text-gray-800 mb-6"
       >
         Technologies I work with
       </motion.h2>
@@ -95,7 +53,7 @@ export default function SkillsIntro() {
       {/* Description */}
       <motion.p
         variants={item}
-        className="max-w-4xl text-sm md:text-base leading-relaxed mb-10 text-gray-600 m-auto"
+        className="max-w-4xl text-sm leading-relaxed mb-10 text-gray-600 m-auto"
       >
         I build modern full-stack applications and explore data-driven
         solutions using tools from both software engineering and data
@@ -108,7 +66,7 @@ export default function SkillsIntro() {
       {/* Read More */}
       <motion.div
         variants={item}
-        className="flex items-center gap-4 text-sm tracking-wider group ml-25"
+        className="flex items-center gap-4 text-sm tracking-wider group"
       >
 
         {/* Left Line */}
