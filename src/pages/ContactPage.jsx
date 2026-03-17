@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { siteData } from '../data/data'
-import pic2 from '../assets/pic2.jpg'
+import pic2 from '../assets/pic2.png'
 
 function ContactPage() {
 
