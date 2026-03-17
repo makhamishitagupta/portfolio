@@ -18,7 +18,9 @@ import {
 	SiScikitlearn,
 	SiCplusplus,
 	SiPython
-  } from "react-icons/si";;
+} from "react-icons/si";
+
+import { useEffect } from "react";
 
 import { TbBrandCpp } from "react-icons/tb";
 
@@ -64,6 +66,10 @@ const item = {
 };
 
 export default function Skills() {
+  useEffect(() => {
+    // Scroll to top when Projects page loads
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
   return (
     <section className="bg-[#1A1A1A] py-20 px-6 text-center">
 		<motion.div 
