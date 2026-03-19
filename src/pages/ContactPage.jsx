@@ -23,13 +23,13 @@ function ContactPage() {
 		email: !email.trim()
 			? 'Email is required'
 			: email && !emailRegex.test(email)
-			? 'Enter a valid email'
-			: '',
+				? 'Enter a valid email'
+				: '',
 		message: !message.trim()
 			? 'Message is required'
 			: message.trim().length < 10
-			? 'Message should be at least 10 characters'
-			: '',
+				? 'Message should be at least 10 characters'
+				: '',
 	}
 
 	const isValid = !errors.name && !errors.email && !errors.message
@@ -185,7 +185,7 @@ function ContactPage() {
 									Message
 
 									<textarea
-										rows="5"
+										rows="9"
 										value={message}
 										onChange={e => setMessage(e.target.value)}
 										onBlur={() => handleBlur('message')}
@@ -199,16 +199,14 @@ function ContactPage() {
 								)}
 							</div>
 
-							<div className="flex justify-end pt-4">
+							<div className="flex justify-end pt-4 relative">
 
 								<button
 									type="submit"
 									disabled={!isValid}
-									className={`h-12 w-32 rounded-full text-white transition-all duration-300 ${
-										isValid
-											? 'bg-[#3B5AFF] hover:scale-105 hover:shadow-[0_0_30px_rgba(59,90,255,.35)]'
-											: 'bg-gray-600/60 cursor-not-allowed'
-									}`}
+									className={`absolute bottom-0 right-0 h-35 w-35 rounded-full text-white transition-all duration-300 bg-[#3B5AFF] hover:scale-105 hover:shadow-[0_0_30px_rgba(59,90,255,.35)]'
+										// : 'bg-gray-600/60 cursor-not-allowed'
+										}`}
 								>
 									Send
 								</button>
