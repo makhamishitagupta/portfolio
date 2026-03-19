@@ -58,7 +58,7 @@ function Projects() {
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
               >
-                <a href={p.link}>{p.title}</a>
+                <Link to={`/projects/${p.id}`}>{p.title}</Link>
               </div>
               
               <div 
