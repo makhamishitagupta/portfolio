@@ -3,13 +3,22 @@ import Projects from '../components/Projects'
 import { motion } from 'framer-motion'
 import { siteData } from '../data/data'
 import Contact from '../components/Contact'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function ProjectsPage() {
     useEffect(() => {
         // Scroll to top when Projects page loads
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }, [])
+
+    const [activeFilter, setActiveFilter] = useState('All')
+
+    const categories = ['All', ...new Set(siteData.projects.map(p => p.category))]
+
+    const filteredProjects =
+        activeFilter === 'All'
+            ? siteData.projects
+            : siteData.projects.filter(p => p.category === activeFilter)
 
     return (
         <>
@@ -41,8 +50,23 @@ function ProjectsPage() {
                             Projects that define my journey
                         </motion.h2>
                     </motion.div>
+                    <div className="flex gap-4 pt-10 flex-wrap">
+                        {categories.map((cat) => (
+                            <button
+                                key={cat}
+                                onClick={() => setActiveFilter(cat)}
+                                className={`px-6 py-3 rounded-full border transition-all duration-300 
+            ${activeFilter === cat
+                                        ? 'bg-black text-white border-black'
+                                        : 'bg-white text-black border-neutral-300 hover:border-black'
+                                    }`}
+                            >
+                                {cat}
+                            </button>
+                        ))}
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-20">
-                        {siteData.projects.map((p) => (
+                        {filteredProjects.map((p) => (
                             <motion.div
                                 key={p.id}
                                 whileHover={{ y: -3 }}

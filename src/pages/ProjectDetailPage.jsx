@@ -124,9 +124,30 @@ function ProjectDetailPage() {
                         transition={{ duration: 0.6, delay: 0.5 }}
                     >
                         <h3 className="text-2xl font-medium mb-6">About the Project</h3>
-                        <p className="text-gray-700 text-md leading-relaxed text-justify whitespace-pre-wrap mt-10">
+                        {/* <p className="text-gray-700 text-md leading-relaxed text-justify whitespace-pre-wrap mt-10">
                             {project.about}
-                        </p>
+                        </p> */}
+                        <div className="text-gray-700 text-md leading-relaxed mt-10 space-y-6 text-justify pr-10 md:pr-20 lg:pr-60">
+
+                            {project.about.split('. ').map((point, index) => {
+                                const text = point.trim()
+
+                                if (!text) return null
+
+                                return (
+                                    <div key={index} className="flex gap-3">
+                                        {/* Bullet */}
+                                        <div className="mt-2 w-2 h-2 bg-black rounded-full"></div>
+
+                                        {/* Content */}
+                                        <p className="text-justify">
+                                            {text}.
+                                        </p>
+                                    </div>
+                                )
+                            })}
+
+                        </div>
                     </motion.div>
                 )}
 
