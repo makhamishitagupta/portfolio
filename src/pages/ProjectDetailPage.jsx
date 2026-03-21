@@ -137,12 +137,15 @@ function ProjectDetailPage() {
                                 return (
                                     <div key={index} className="flex gap-3">
                                         {/* Bullet */}
-                                        <div className="mt-2 w-2 h-2 bg-black rounded-full"></div>
+                                        {/* <div className="mt-2 w-2 h-2 bg-black rounded-full"></div> */}
 
                                         {/* Content */}
-                                        <p className="text-justify">
+                                        {/* <p className="text-justify">
                                             {text}.
-                                        </p>
+                                        </p> */}
+                                        <ul className="list-disc list-inside space-y-2 no-underline">
+                                            <li>{text}.</li>
+                                        </ul>
                                     </div>
                                 )
                             })}
