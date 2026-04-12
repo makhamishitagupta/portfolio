@@ -34,6 +34,7 @@ export const siteData = {
 				"Developed a full-stack Loan Default Prediction System that analyzes applicant data and predicts loan repayment risk using machine learning. Built and trained classification models using Scikit-learn with proper data preprocessing, feature scaling, and model evaluation techniques. Deployed the trained model using FastAPI and integrated it with a Node.js backend for seamless communication with the React frontend. Implemented a complete pipeline including data validation, API-based predictions, and real-time user input handling. Ensured modular architecture by separating frontend, backend, and ML services, improving scalability and maintainability.",
 			image: "/images/loan.png",
 			link: "https://github.com/makhamishitagupta/Loan-Approval",
+			demo: "https://loan-approval-prediction-la9x.onrender.com",
 			tech: ["React", "Node.js", "Express", "MongoDB", "FastAPI", "Scikit-learn"],
 			category: "Machine Learning",
 		},
