@@ -5,7 +5,11 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
-  FaPython
+  FaPython,
+  FaBrain,
+  FaCode,
+  FaProjectDiagram,
+  FaDatabase
 } from "react-icons/fa";
 
 import {
@@ -19,6 +23,9 @@ import {
 	SiCplusplus,
 	SiPython
 } from "react-icons/si";
+
+import { GiCycle } from "react-icons/gi";
+import { MdTextFields } from "react-icons/md";
 
 import { useEffect } from "react";
 
@@ -42,6 +49,29 @@ const learning = [
   { name: "Seaborn", icon: <SiPython size={40} color="#3776AB" /> },
   { name: "Matplotlib", icon: <SiPandas size={40} /> },
   { name: "Scikit-learn", icon: <SiScikitlearn size={40} color="#F7931E" /> }
+];
+
+const mlAlgorithms = [
+  { name: "Linear Regression", icon: <FaBrain size={40} color="#4CAF50" /> },
+  { name: "Logistic Regression", icon: <FaBrain size={40} color="#2196F3" /> },
+  { name: "KNN", icon: <FaBrain size={40} color="#FF9800" /> },
+  { name: "Naive Bayes", icon: <FaBrain size={40} color="#9C27B0" /> },
+  { name: "SVM", icon: <FaBrain size={40} color="#F44336" /> },
+  { name: "Decision Trees", icon: <FaBrain size={40} color="#795548" /> },
+];
+
+const dsaSkills = [
+  { name: "Arrays", icon: <FaCode size={40} color="#3F51B5" /> },
+  { name: "Binary Search", icon: <FaCode size={40} /> },
+  { name: "Recursion", icon: <FaCode size={40} /> },
+  { name: "Backtracking", icon: <FaCode size={40} /> },
+  { name: "Linked Lists", icon: <FaProjectDiagram size={40} color="#009688" /> },
+  { name: "Stacks", icon: <FaDatabase size={40} color="#FF5722" /> },
+  { name: "Queues", icon: <FaDatabase size={40} color="#607D8B" /> },
+  { name: "Trees", icon: <FaProjectDiagram size={40} color="#8BC34A" /> },
+  // { name: "Graphs", icon: <FaProjectDiagram size={40} color="#E91E63" /> },
+  // { name: "Dynamic Programming", icon: <FaCode size={40} color="#FFC107" /> },
+  // { name: "Greedy Algorithms", icon: <FaCode size={40} color="#00BCD4" /> },
 ];
 
 const otherSkills = [
@@ -117,6 +147,61 @@ export default function Skills() {
         </motion.div>
       </div>
 
+      {/* DATA STRUCTURES & ALGORITHMS */}
+      <div className="max-w-4xl mx-auto mb-16 text-black">
+        <h3 className="text-sm tracking-[6px] font-semibold mb-10 text-white">
+          DATA STRUCTURES:
+        </h3>
+
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          className="grid grid-cols-2 md:grid-cols-4 gap-12 text-[#AAAAAA]"
+        >
+          {dsaSkills.map((skill, index) => (
+            <motion.div
+              key={index}
+              variants={item}
+              className="flex flex-col items-center gap-3"
+            >
+              {skill.icon}
+              <span className="text-xs tracking-[2px]">
+                {skill.name.toUpperCase()}
+              </span>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* MACHINE LEARNING */}
+      <div className="max-w-4xl mx-auto mb-16 text-black">
+        <h3 className="text-sm tracking-[6px] font-semibold mb-10 text-white">
+          MACHINE LEARNING ALGORITHMS (Beginner Level):
+        </h3>
+
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          className="grid grid-cols-2 md:grid-cols-4 gap-12 text-[#AAAAAA]"
+        >
+          {mlAlgorithms.map((skill, index) => (
+            <motion.div
+              key={index}
+              variants={item}
+              className="flex flex-col items-center gap-3"
+            >
+              {skill.icon}
+              <span className="text-xs tracking-[2px]">
+                {skill.name.toUpperCase()}
+              </span>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+
+      
       {/* LEARNING */}
       <div className="max-w-4xl mx-auto mb-16 text-black">
         <h3 className="text-sm tracking-[6px] font-semibold mb-10 text-white">

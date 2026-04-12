@@ -153,7 +153,7 @@ export default function AboutPage() {
 						<p className="italic">
 							VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad
 						</p>
-						<p>2024 – 2028 (Pursuing) | CGPA: <span className="font-semibold">9.43</span> (till 2nd Year, I Sem)</p>
+						<p>2024 – 2028 (Pursuing) | CGPA: <span className="font-semibold">9.44</span> (till 2nd Year, I Sem)</p>
 
 						<hr className="border-gray-300 my-4" />
 
