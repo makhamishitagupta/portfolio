@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { siteData } from '../data/data'
 import pic1 from '../assets/pic1.jpg'
-import pic3 from '../assets/pic3.jpg'
+import pic3 from '../assets/pic3.jpeg'
 import Contact from '../components/Contact'
 import './AboutPage.css'
 
@@ -153,7 +153,7 @@ export default function AboutPage() {
 						<p className="italic">
 							VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad
 						</p>
-						<p>2024 – 2028 (Pursuing) | CGPA: <span className="font-semibold">9.44</span> (till 2nd Year, I Sem)</p>
+						<p>2024 – 2028 (Pursuing) | CGPA: <span className="font-semibold">9.44</span> </p>
 
 						<hr className="border-gray-300 my-4" />
 

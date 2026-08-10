@@ -8,6 +8,9 @@ export const siteData = {
 		github: "https://github.com/makhamishitagupta",
 		linkedin: "https://www.linkedin.com/in/ishitha-gupta-makham-230532318/",
 		instagram: "https://www.instagram.com",
+		codeforces: "https://codeforces.com/profile/makhamishitagupta",
+		leetcode: "https://leetcode.com/makhamishitagupta/",
+		codechef: "https://www.codechef.com/users/makhamishitagupta",
 	},
 	sections: ["Projects", "About", "Contact"],
 	about:

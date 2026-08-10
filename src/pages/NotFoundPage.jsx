@@ -89,9 +89,8 @@ function NotFoundPage() {
 					<div className="sm:col-span-2 lg:col-span-1 lg:justify-self-end">
 						<p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9ca3af]">Socials</p>
 						<div className="mt-2 flex flex-wrap gap-x-6 gap-y-2 text-base text-white sm:text-lg">
-							<a href="https://instagram.com" target="_blank" rel="noreferrer" className="transition-colors duration-300 hover:text-indigo-300">Instagram</a>
-							<a href="https://twitter.com" target="_blank" rel="noreferrer" className="transition-colors duration-300 hover:text-indigo-300">Twitter</a>
-							<a href="https://linkedin.com" target="_blank" rel="noreferrer" className="transition-colors duration-300 hover:text-indigo-300">LinkedIn</a>
+							<a href="https://www.linkedin.com/in/ishitha-gupta-makham-230532318/" target="_blank" rel="noreferrer" className="transition-colors duration-300 hover:text-indigo-300">LinkedIn</a>
+							<a href="https://github.com/makhamishitagupta" target="_blank" rel="noreferrer" className="transition-colors duration-300 hover:text-indigo-300">GitHub</a>
 						</div>
 					</div>
 				</motion.footer>
