@@ -30,6 +30,19 @@ export const siteData = {
 		},
 		{
 			id: 2,
+			title: "LuxeStyle: AI-Powered Agentic E-Commerce Platform",
+			description:
+				"A full-stack luxury fashion e-commerce platform with AI-powered agents for product discovery and recommendations. Built with the MERN stack, featuring role-based authentication, secure checkout, and merchant/admin workflows.",
+			about:
+				"Built a full-stack luxury fashion e-commerce platform with product discovery, search, cart, wishlist, reviews, secure checkout, and order management. Developed AI-powered agents to assist users with product discovery, recommendations, and e-commerce workflows, enabling intelligent interactions beyond traditional search and filtering. Implemented role-based Clerk authentication with dedicated customer, admin, and merchant workflows, including product, inventory, order, customer, brand, and report management.",
+			image: "/images/luxestyle.png",
+			link: "https://github.com/makhamishitagupta/ExamVault.git",
+			demo: "https://e-commerce-website-1-nyjg.onrender.com/",
+			tech: ["React", "Node.js", "Express", "MongoDB", "Clerk", "Razorpay", "AI Agents"],
+			category: "Web Development",
+		},
+		{
+			id: 3,
 			title: "Loan Default Prediction System",
 			description:
 				"An end-to-end machine learning web application that predicts whether a loan applicant is likely to default or not. Built using MERN stack with a FastAPI-based ML model integration.",
@@ -42,7 +55,7 @@ export const siteData = {
 			category: "Machine Learning",
 		},
 		{
-			id: 3,
+			id: 4,
 			title: "Blog Fuel",
 			description:
 				"A full-stack blogging platform that allows users to create, edit, and manage blogs with secure authentication and role-based access.",
@@ -54,7 +67,7 @@ export const siteData = {
 			category: "Web Development",
 		},
 		{
-			id: 4,
+			id: 5,
 			title: "Income Prediction",
 			description:
 				"UCI dataset analysis; preprocessing, visualization, trend insights on education & income.",
@@ -65,7 +78,7 @@ export const siteData = {
 			category: "Data Analysis",
 		},
 		{
-			id: 5,
+			id: 6,
 			title: "Titanic Survival Prediction",
 			description:
 				"Logistic Regression, Random Forest, feature engineering; achieved Kaggle score: 0.75598.",
@@ -76,7 +89,7 @@ export const siteData = {
 			category: "Machine Learning",
 		},
 		{
-			id: 6,
+			id: 7,
 			title: "Uber Ride Data Analysis",
 			description:
 				"Trends in demand, cancellations, and peak hours; visualization with Pandas, Matplotlib, Seaborn.",
