@@ -29,7 +29,7 @@ export const siteData = {
 			category: "Web Development",
 		},
 		{
-			id: 2,
+			id: 3,
 			title: "LuxeStyle: AI-Powered Agentic E-Commerce Platform",
 			description:
 				"A full-stack luxury fashion e-commerce platform with AI-powered agents for product discovery and recommendations. Built with the MERN stack, featuring role-based authentication, secure checkout, and merchant/admin workflows.",
@@ -42,7 +42,7 @@ export const siteData = {
 			category: "Web Development",
 		},
 		{
-			id: 3,
+			id: 4,
 			title: "Loan Default Prediction System",
 			description:
 				"An end-to-end machine learning web application that predicts whether a loan applicant is likely to default or not. Built using MERN stack with a FastAPI-based ML model integration.",
@@ -55,7 +55,7 @@ export const siteData = {
 			category: "Machine Learning",
 		},
 		{
-			id: 4,
+			id: 5,
 			title: "Blog Fuel",
 			description:
 				"A full-stack blogging platform that allows users to create, edit, and manage blogs with secure authentication and role-based access.",
@@ -67,7 +67,7 @@ export const siteData = {
 			category: "Web Development",
 		},
 		{
-			id: 5,
+			id: 6,
 			title: "Income Prediction",
 			description:
 				"UCI dataset analysis; preprocessing, visualization, trend insights on education & income.",
@@ -78,7 +78,7 @@ export const siteData = {
 			category: "Data Analysis",
 		},
 		{
-			id: 6,
+			id: 7,
 			title: "Titanic Survival Prediction",
 			description:
 				"Logistic Regression, Random Forest, feature engineering; achieved Kaggle score: 0.75598.",
@@ -89,7 +89,7 @@ export const siteData = {
 			category: "Machine Learning",
 		},
 		{
-			id: 7,
+			id: 8,
 			title: "Uber Ride Data Analysis",
 			description:
 				"Trends in demand, cancellations, and peak hours; visualization with Pandas, Matplotlib, Seaborn.",
@@ -101,24 +101,16 @@ export const siteData = {
 		},
 
 		{
-			id: 8,
-			title: "Atrial Fibrillation Detection from PPG Signals",
+			id: 2,
+			title: "AF Detection from PPG: Wearable Arrhythmia Screening with LightGBM",
 			description:
-				"A machine learning-based healthcare project that analyzes photoplethysmography (PPG) signals to detect patterns associated with atrial fibrillation. Includes a web interface for demonstrating the project.",
+				"An end-to-end machine learning pipeline that detects Atrial Fibrillation from smartwatch-style PPG pulse signals. Extracts 35 signal features per 30-second window and classifies them with LightGBM, catching 98.99% of AF episodes in patients the model had never seen.",
 			about:
-				"Developed a machine learning pipeline for atrial fibrillation detection using photoplethysmography (PPG) signals. Worked on signal data preprocessing, feature preparation, model training, and evaluation to distinguish AF-related patterns from non-AF data. Built and deployed a web-based interface on Vercel to make the project accessible through a live demo.",
+				"Built a complete pipeline on the MIMIC PERform AF dataset (34 ICU patients, 2,686 thirty-second windows) that filters raw 125 Hz PPG with a zero-phase Butterworth bandpass filter, detects systolic peaks adaptively, and engineers 35 features covering pulse rate variability (RMSSD, pNN50, IQR), Poincaré geometry, sample and Shannon entropy, pulse amplitude dynamics, and Welch spectral power. Prevented patient data leakage with 5-fold Stratified Group cross-validation and a holdout set of 9 unseen patients. Benchmarked LightGBM against Decision Tree and Random Forest baselines, reaching 98.99% AF sensitivity, 88.33% accuracy and 0.986 ROC-AUC at window level, and 8/9 patients correctly classified. Published an interactive documentation site that explains the method, results and visualizations.",
 			image: "/images/af-detection.png",
 			link: "https://github.com/makhamishitagupta/AF-Detection-from-PPG",
 			demo: "https://af-detection-from-ppg.vercel.app/",
-			tech: [
-				"Python",
-				"Pandas",
-				"NumPy",
-				"Scikit-learn",
-				"Machine Learning",
-				"PPG Signal Processing",
-				"Vercel"
-			],
+			tech: ["Python", "LightGBM", "scikit-learn", "SciPy", "NumPy", "Pandas", "Matplotlib", "Signal Processing"],
 			category: "Machine Learning",
 		},
 	],
