@@ -28,6 +28,20 @@ export const siteData = {
 			tech: ["Node.js", "React", "MongoDB", "Cloudinary", "Express"],
 			category: "Web Development",
 		},
+		
+		{
+			id: 2,
+			title: "AF Detection from PPG: Wearable Arrhythmia Screening with LightGBM",
+			description:
+				"An end-to-end machine learning pipeline that detects Atrial Fibrillation from smartwatch-style PPG pulse signals. Extracts 35 signal features per 30-second window and classifies them with LightGBM, catching 98.99% of AF episodes in patients the model had never seen.",
+			about:
+				"Built a complete pipeline on the MIMIC PERform AF dataset (34 ICU patients, 2,686 thirty-second windows) that filters raw 125 Hz PPG with a zero-phase Butterworth bandpass filter, detects systolic peaks adaptively, and engineers 35 features covering pulse rate variability (RMSSD, pNN50, IQR), Poincaré geometry, sample and Shannon entropy, pulse amplitude dynamics, and Welch spectral power. Prevented patient data leakage with 5-fold Stratified Group cross-validation and a holdout set of 9 unseen patients. Benchmarked LightGBM against Decision Tree and Random Forest baselines, reaching 98.99% AF sensitivity, 88.33% accuracy and 0.986 ROC-AUC at window level, and 8/9 patients correctly classified. Published an interactive documentation site that explains the method, results and visualizations.",
+			image: "/images/af-detection.png",
+			link: "https://github.com/makhamishitagupta/AF-Detection-from-PPG",
+			demo: "https://af-detection-from-ppg.vercel.app/",
+			tech: ["Python", "LightGBM", "scikit-learn", "SciPy", "NumPy", "Pandas", "Matplotlib", "Signal Processing"],
+			category: "Machine Learning",
+		},
 		{
 			id: 3,
 			title: "LuxeStyle: AI-Powered Agentic E-Commerce Platform",
@@ -98,20 +112,6 @@ export const siteData = {
 			link: "https://github.com/makhamishitagupta/Uber-Ride-Data-Analysis",
 			tech: ["Python", "Pandas", "Matplotlib"],
 			category: "Data Analysis",
-		},
-
-		{
-			id: 2,
-			title: "AF Detection from PPG: Wearable Arrhythmia Screening with LightGBM",
-			description:
-				"An end-to-end machine learning pipeline that detects Atrial Fibrillation from smartwatch-style PPG pulse signals. Extracts 35 signal features per 30-second window and classifies them with LightGBM, catching 98.99% of AF episodes in patients the model had never seen.",
-			about:
-				"Built a complete pipeline on the MIMIC PERform AF dataset (34 ICU patients, 2,686 thirty-second windows) that filters raw 125 Hz PPG with a zero-phase Butterworth bandpass filter, detects systolic peaks adaptively, and engineers 35 features covering pulse rate variability (RMSSD, pNN50, IQR), Poincaré geometry, sample and Shannon entropy, pulse amplitude dynamics, and Welch spectral power. Prevented patient data leakage with 5-fold Stratified Group cross-validation and a holdout set of 9 unseen patients. Benchmarked LightGBM against Decision Tree and Random Forest baselines, reaching 98.99% AF sensitivity, 88.33% accuracy and 0.986 ROC-AUC at window level, and 8/9 patients correctly classified. Published an interactive documentation site that explains the method, results and visualizations.",
-			image: "/images/af-detection.png",
-			link: "https://github.com/makhamishitagupta/AF-Detection-from-PPG",
-			demo: "https://af-detection-from-ppg.vercel.app/",
-			tech: ["Python", "LightGBM", "scikit-learn", "SciPy", "NumPy", "Pandas", "Matplotlib", "Signal Processing"],
-			category: "Machine Learning",
 		},
 	],
 }
