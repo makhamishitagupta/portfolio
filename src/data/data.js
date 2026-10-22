@@ -99,6 +99,28 @@ export const siteData = {
 			tech: ["Python", "Pandas", "Matplotlib"],
 			category: "Data Analysis",
 		},
+
+		{
+			id: 3,
+			title: "Atrial Fibrillation Detection from PPG Signals",
+			description:
+				"A machine learning-based healthcare project that analyzes photoplethysmography (PPG) signals to detect patterns associated with atrial fibrillation. Includes a web interface for demonstrating the project.",
+			about:
+				"Developed a machine learning pipeline for atrial fibrillation detection using photoplethysmography (PPG) signals. Worked on signal data preprocessing, feature preparation, model training, and evaluation to distinguish AF-related patterns from non-AF data. Built and deployed a web-based interface on Vercel to make the project accessible through a live demo.",
+			image: "/images/af-detection.png",
+			link: "https://github.com/makhamishitagupta/AF-Detection-from-PPG",
+			demo: "https://af-detection-from-ppg.vercel.app/",
+			tech: [
+				"Python",
+				"Pandas",
+				"NumPy",
+				"Scikit-learn",
+				"Machine Learning",
+				"PPG Signal Processing",
+				"Vercel"
+			],
+			category: "Machine Learning",
+		},
 	],
 }
 
