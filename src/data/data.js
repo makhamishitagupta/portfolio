@@ -101,7 +101,7 @@ export const siteData = {
 		},
 
 		{
-			id: 3,
+			id: 8,
 			title: "Atrial Fibrillation Detection from PPG Signals",
 			description:
 				"A machine learning-based healthcare project that analyzes photoplethysmography (PPG) signals to detect patterns associated with atrial fibrillation. Includes a web interface for demonstrating the project.",
